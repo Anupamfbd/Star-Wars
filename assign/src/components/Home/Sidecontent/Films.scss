@@ -1,0 +1,162 @@
+@import "../../Home/mixins.scss";
+
+.main{
+  //-----------------------CSS for grid view------------------------
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    gap: 5px;
+    margin: 10px 20px 10px 10px;
+    @include md{
+      grid-template-columns: repeat(2, 190px);
+      margin: 5px 0;
+    }
+  }
+  
+  
+  .grid-item {
+    //border: 1px solid #ccc;
+    background:transparent;
+    padding: 0px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    width: 300px;
+    height: 200px;
+    text-align: left;
+    @include md{
+      width: 180px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+  }
+  .upperdiv{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: -22px;
+    background-color: whitesmoke;
+    img{
+      width: 300px;
+      height: 150px;
+      border-radius: 5px;
+      @include md{
+        width: 180px;
+        height: 68px;
+      }
+    }
+    @include md{
+      width: 180px;
+      height: 70px;
+    }
+  }
+  
+  .info{
+    width: 300px;
+    height: 45px;
+    background-color: grey;
+    margin-top: -16px;
+    //margin-top: 200px;
+    border-radius: 5px;
+    h3{
+      padding-left: 5px;
+      padding-top: 10px;
+      @include md{
+        font-size: 12px;
+      }
+    }
+    .threedot{
+      color: white;
+      position: relative;
+      font-size: 30px;
+      top: -48px;
+      left: 275px;
+      cursor: pointer;
+      @include md{
+        font-size: 20px;
+        top: -33px;
+        left: 160px;
+       
+      }
+    }
+    @include md{
+      width: 180px;
+      height: 40px;
+    }
+  }
+
+  .togglebtn{
+    color: whitesmoke;   
+    font-size: 25px;
+    position: absolute;
+   // top: -300px;
+    top: -55px;
+    left: 940px;
+    cursor: pointer;
+    @include md{
+      left: 350px;
+    }
+  }
+  // .menuoption{
+  //   position: absolute;
+  //   width: 200px;
+  //   height: 320px;
+  //   margin-left: 450px;
+  //   margin-top: 200px;
+  //   background-color: whitesmoke;
+  //   color: black;
+  //   border-radius: 5px;
+  //   .option{
+  //     padding: 12px 20px;
+  //     cursor: pointer;
+  //     display: flex;
+  //     align-items: center;
+  //     .menuicon{
+  //       padding-right: 10px;
+  //     }
+  //   }
+  //   .option:hover{
+  //     background-color: #ff1694;
+  //     border-radius: 5px;
+  //   }
+  // }
+
+  //-------------------Css forlist view-------------------
+  .list {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    @include md{
+      margin: 0;
+      padding: 5px;
+    }
+  }
+  
+  .films-table {
+    width: 950px;
+    height: 600px;
+    margin: -30px auto;
+    border-collapse: collapse;
+    @include md{
+      width: 100%;
+      height: 600px;
+      margin: 0;
+    }
+  }
+  
+  .films-table th,
+  .films-table td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: start;
+    @include md{
+      padding: 5px;
+    }
+  }
+  
+  // .films-table th {
+   
+  // }
+  
+
+}
+  
