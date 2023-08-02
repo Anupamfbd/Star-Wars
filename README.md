@@ -4,7 +4,7 @@ Library Included
 1.react-router-dom
 2.saas
 3.react-icons
-The structure of the app is divided as
+The structure of the app is divided as-
 Home - Parent component
     Header- child component of Home
     Sidebar-child component of Home
