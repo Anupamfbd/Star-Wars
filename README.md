@@ -5,10 +5,10 @@ Library Included
 2.saas
 3.react-icons
 The structure of the app is divided as-
-Home - Parent component
-    Header- child component of Home
-    Sidebar-child component of Home
-           Sidecontent- folder containing child component of Sidebar
+Home - (Parent component)
+    Header- (child component of Home)
+    Sidebar- (child component of Home)
+           Sidecontent- (folder containing child component of Sidebar)
            
 Used hooks - useState, useEffect for implementing logic and fetching data using SWAPI when app loads.
 Implemented ternary operator for decision making when user interact.
